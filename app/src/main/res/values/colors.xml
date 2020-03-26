@@ -1,0 +1,12 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+
+<!--    <color name="search_opaque">#ffaa3f</color>-->
+    <color name="selected_background">#ffaa3f</color>
+
+    <color name="colourPink">#FD3E72</color>
+    <color name="colourWhite">#FFFFFF</color>
+    <color name="colourTransparent">#50FFFFFF</color>
+
+</resources>

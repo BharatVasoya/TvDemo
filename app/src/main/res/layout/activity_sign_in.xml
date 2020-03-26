@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgLogoSignin"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:padding="15dp"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:id="@+id/tvSignInHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLogoSignin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Sign-In with your mobile device"
+                android:textColor="@color/colourWhite"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tvSettingPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSignInHeader"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Open our WeVPN app on your phone. Go to \n Settings -> Account -> TV Sign-in"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_below="@+id/tvSettingPath"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_pink_backgroung"
+                android:padding="2dp"
+                android:src="@drawable/img_qr" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colourPink">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:theme="@style/Theme.MaterialComponents.DayNight.Dialog.Bridge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:text="Sign in Manually"
+                android:textColor="@color/colourWhite"
+                android:textSize="22sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/colourWhite"
+
+                app:hintTextColor="@color/colourWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvEmailSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colourPink"
+                    android:hint="Email"
+                    android:textColor="@color/colourWhite"
+                    android:textColorHint="@color/colourWhite"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/colourWhite"
+                app:hintTextColor="@color/colourWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvPassSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colourPink"
+                    android:hint="Password"
+                    android:textColor="@color/colourWhite"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sign-in"
+                android:textColor="@color/colourWhite"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
